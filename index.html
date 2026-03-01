@@ -4,94 +4,122 @@
     <title>Rahul Kumar Jha | AI/ML Portfolio</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f6f8;
+            background: #f5f7fa;
             color: #333;
         }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 0;
+        }
         h1 {
-            color: #0a66c2;
+            font-size: 36px;
+            margin-bottom: 5px;
         }
         h2 {
             border-bottom: 2px solid #0a66c2;
             padding-bottom: 5px;
-            margin-top: 30px;
+            margin-top: 40px;
         }
-        .section {
-            margin-bottom: 20px;
+        .hero {
+            text-align: center;
+            padding: 60px 0;
         }
         .btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #0a66c2;
+            background: #0a66c2;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .btn:hover {
-            background-color: #004182;
+            background: #004182;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
         ul {
-            line-height: 1.6;
+            padding-left: 20px;
+        }
+        .skills span {
+            display: inline-block;
+            background: #e3f2fd;
+            padding: 6px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-<h1>Rahul Kumar Jha</h1>
-<p><strong>Aspiring Machine Learning Engineer | AI & Deep Learning</strong></p>
-<p>Email: rahuljha5857@gmail.com</p>
-<p>
-    <a href="https://www.linkedin.com/in/rahuljha5857" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/rahul5857" target="_blank">GitHub</a>
-</p>
+<div class="container">
 
-<a href="Rahul_Jha_Resume.pdf" download class="btn">Download Resume</a>
-
-<div class="section">
-    <h2>Professional Summary</h2>
+<div class="hero">
+    <h1>Rahul Kumar Jha</h1>
+    <p>Aspiring Machine Learning Engineer | AI & Deep Learning</p>
     <p>
-        Artificial Intelligence and Machine Learning undergraduate with strong foundations in supervised learning, neural networks, and computer vision. Experienced in developing end-to-end ML models, performing feature engineering, and validating model performance. Passionate about building scalable AI solutions for real-world applications.
+        <a href="https://www.linkedin.com/in/rahul5857" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/rahul5857" target="_blank">GitHub</a>
     </p>
+    <a href="Rahul_Jha_Resume.pdf" download class="btn">Download Resume</a>
 </div>
 
-<div class="section">
-    <h2>Technical Skills</h2>
+<h2>About Me</h2>
+<div class="card">
+    Artificial Intelligence and Machine Learning undergraduate with strong foundations in supervised learning, neural networks, and computer vision. Passionate about building scalable AI solutions for real-world applications.
+</div>
+
+<h2>Technical Skills</h2>
+<div class="card skills">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>Neural Networks</span>
+    <span>Computer Vision</span>
+    <span>Scikit-learn</span>
+    <span>NumPy</span>
+    <span>Pandas</span>
+    <span>Matplotlib</span>
+    <span>GridSearchCV</span>
+</div>
+
+<h2>Projects</h2>
+
+<div class="card">
+    <h3>AI-Based Crop Health Monitoring</h3>
     <ul>
-        <li><strong>Programming:</strong> Python, Java, C (Basic)</li>
-        <li><strong>Machine Learning:</strong> Regression, Classification, Cross-Validation, GridSearchCV</li>
-        <li><strong>Deep Learning:</strong> Neural Networks, Backpropagation, ReLU, Sigmoid, Dropout</li>
-        <li><strong>Libraries & Tools:</strong> NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, Jupyter Notebook, VS Code</li>
+        <li>Developed ML pipeline for multispectral crop classification.</li>
+        <li>Performed feature extraction and preprocessing.</li>
+        <li>Applied supervised learning for precision agriculture.</li>
     </ul>
 </div>
 
-<div class="section">
-    <h2>Projects</h2>
-
-    <h3>AI-Based Crop Health Monitoring Using Multispectral Data</h3>
+<div class="card">
+    <h3>Landing Zone Safety Classification</h3>
     <ul>
-        <li>Developed a machine learning pipeline to analyze multispectral imagery for crop health classification.</li>
-        <li>Performed feature extraction and preprocessing to enhance model performance.</li>
-        <li>Applied supervised learning techniques to support data-driven precision agriculture decisions.</li>
+        <li>Designed classification model for safe drone landing zones.</li>
+        <li>Performed preprocessing and model validation.</li>
     </ul>
+</div>
 
-    <h3>AI-Based Landing Zone Safety Classification Using Drone Imagery-Derived Features</h3>
+<div class="card">
+    <h3>Forest Fire Smoke Detection</h3>
     <ul>
-        <li>Designed a classification model to assess safe drone landing zones using image-derived features.</li>
-        <li>Performed data preprocessing and feature engineering to improve model robustness.</li>
-        <li>Conducted model validation to ensure reliable and accurate safety predictions.</li>
+        <li>Built image-based smoke detection model.</li>
+        <li>Applied computer vision and supervised learning techniques.</li>
     </ul>
-
-    <h3>Forest Fire Smoke Detection System</h3>
-    <ul>
-        <li>Built an image-based classification model for early forest fire smoke detection.</li>
-        <li>Applied computer vision techniques for feature extraction and pattern recognition.</li>
-        <li>Utilized supervised learning methods to improve early identification accuracy.</li>
-    </ul>
+</div>
 
 </div>
 
 </body>
 </html>
-<!-- deploy -->
