@@ -1,59 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul Kumar Jha | AI/ML Portfolio</title>
+
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: Arial, sans-serif;
             background: #0f172a;
             color: #f1f5f9;
+            line-height: 1.6;
         }
 
         .container {
             width: 85%;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
             padding: 40px 0;
         }
 
         .hero {
             text-align: center;
-            padding: 80px 0;
+            padding: 80px 20px;
         }
 
-        h1 {
-            font-size: 42px;
+        .hero h1 {
+            font-size: 48px;
             margin-bottom: 10px;
         }
 
-        h2 {
-            margin-top: 50px;
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 5px;
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
         }
 
-        p {
-            line-height: 1.6;
+        .links {
+            margin-top: 20px;
         }
 
-        a {
+        .links a {
             color: #38bdf8;
             text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
         }
 
-        a:hover {
+        .links a:hover {
             text-decoration: underline;
         }
 
         .btn {
             display: inline-block;
+            margin-top: 25px;
             padding: 12px 24px;
             background: #38bdf8;
             color: #0f172a;
-            text-decoration: none;
             border-radius: 6px;
-            margin-top: 20px;
+            text-decoration: none;
             font-weight: bold;
         }
 
@@ -61,12 +72,19 @@
             background: #0ea5e9;
         }
 
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 8px;
+        }
+
         .card {
             background: #1e293b;
             padding: 25px;
-            margin-top: 25px;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
             transition: transform 0.2s ease;
         }
 
@@ -74,15 +92,24 @@
             transform: translateY(-5px);
         }
 
-        ul {
+        .card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .card ul {
             padding-left: 20px;
         }
 
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
         .skills span {
-            display: inline-block;
             background: #334155;
             padding: 8px 14px;
-            margin: 6px;
             border-radius: 20px;
             font-size: 14px;
         }
@@ -90,77 +117,111 @@
         footer {
             text-align: center;
             margin-top: 60px;
-            opacity: 0.6;
+            padding: 20px;
+            opacity: 0.7;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="hero">
-        <h1>Rahul Kumar Jha</h1>
-        <p>Aspiring Machine Learning Engineer | AI & Deep Learning</p>
+        <div class="hero">
+            <h1>Rahul Kumar Jha</h1>
+            <p>Aspiring Machine Learning Engineer | AI & Deep Learning</p>
 
-        <p>
-            <a href="https://www.linkedin.com/in/rahuljha5857/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/rahul5857" target="_blank">GitHub</a>
-        </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/rahuljha5857/" target="_blank">LinkedIn</a>
+                |
+                <a href="https://github.com/rahul5857" target="_blank">GitHub</a>
+            </div>
 
-        <a href="Rahul_Jha_Resume.pdf" download class="btn">Download Resume</a>
+            <a href="Rahul_Jha_Resume.pdf" download class="btn">
+                Download Resume
+            </a>
+        </div>
+
+        <h2>About Me</h2>
+
+        <div class="card">
+            <p>
+                Artificial Intelligence and Machine Learning undergraduate with hands-on experience
+                in Machine Learning, Deep Learning, Natural Language Processing, and Retrieval-Augmented
+                Generation (RAG) systems. Passionate about building AI-powered applications using
+                FastAPI, Streamlit, ChromaDB, and modern LLM technologies.
+            </p>
+        </div>
+
+        <h2>Technical Skills</h2>
+
+        <div class="card skills">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>NLP</span>
+            <span>RAG</span>
+            <span>FastAPI</span>
+            <span>Streamlit</span>
+            <span>ChromaDB</span>
+            <span>Sentence Transformers</span>
+            <span>LangChain</span>
+            <span>SQL</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Scikit-learn</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+
+        <h2>Projects</h2>
+
+        <div class="card">
+            <h3>Multi-PDF RAG Chatbot</h3>
+            <ul>
+                <li>Built a Multi-PDF RAG chatbot using Streamlit, ChromaDB, and Ollama.</li>
+                <li>Implemented PDF parsing, chunking, embeddings, and vector similarity search.</li>
+                <li>Integrated Llama 3.2 for context-aware question answering across documents.</li>
+            </ul>
+
+            <p style="margin-top:15px;">
+                <a href="https://github.com/rahul5857/Multi-PDF-RAG-Chatbot" target="_blank">
+                    View Project →
+                </a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AI Resume Analyzer</h3>
+            <ul>
+                <li>Developed an AI-powered resume analyzer using FastAPI and Sentence Transformers.</li>
+                <li>Compared resumes against job descriptions using semantic similarity.</li>
+                <li>Identified matching and missing skills automatically.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Landing Zone Safety Classification</h3>
+            <ul>
+                <li>Designed a machine learning model for safe drone landing zone prediction.</li>
+                <li>Performed feature engineering, preprocessing, and model validation.</li>
+            </ul>
+        </div>
+
+        <h2>Contact</h2>
+
+        <div class="card">
+            <p><strong>Email:</strong> rahuljha5857@gmail.com</p>
+            <p><strong>GitHub:</strong> github.com/rahul5857</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/rahuljha5857</p>
+        </div>
+
+        <footer>
+            © 2026 Rahul Kumar Jha | Built with GitHub Pages
+        </footer>
+
     </div>
-
-    <h2>About Me</h2>
-    <div class="card">
-        Artificial Intelligence and Machine Learning undergraduate with strong foundations in supervised learning, neural networks, and computer vision. Passionate about building scalable AI solutions for real-world applications.
-    </div>
-
-    <h2>Technical Skills</h2>
-    <div class="card skills">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Neural Networks</span>
-        <span>Computer Vision</span>
-        <span>Scikit-learn</span>
-        <span>NumPy</span>
-        <span>Pandas</span>
-        <span>Matplotlib</span>
-        <span>GridSearchCV</span>
-    </div>
-
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>AI-Based Crop Health Monitoring</h3>
-        <ul>
-            <li>Developed ML pipeline for multispectral crop classification.</li>
-            <li>Performed feature extraction and preprocessing.</li>
-            <li>Applied supervised learning for precision agriculture.</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Landing Zone Safety Classification</h3>
-        <ul>
-            <li>Designed classification model for safe drone landing zones.</li>
-            <li>Performed preprocessing and model validation.</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Forest Fire Smoke Detection</h3>
-        <ul>
-            <li>Built image-based smoke detection model.</li>
-            <li>Applied computer vision and supervised learning techniques.</li>
-        </ul>
-    </div>
-
-    <footer>
-        © 2026 Rahul Kumar Jha | Built with GitHub Pages
-    </footer>
-
-</div>
 
 </body>
+
 </html>
